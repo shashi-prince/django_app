@@ -62,7 +62,7 @@ except google.auth.exceptions.DefaultCredentialsError:
 
 if os.path.isfile(env_file):
     # Use a local secret file, if provided
-
+    print("inside env file: ", env_file)
     env.read_env(env_file)
 # [START_EXCLUDE]
 elif os.getenv("TRAMPOLINE_CI", None):
@@ -240,14 +240,26 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
 # Enable i18n and set the list of supported languages
-LANGUAGES = [
-    ("en", _("English")),
-    ("fr", _("French")),
-    ("de", _("German")),
-    ("pt", _("Portuguese")),
-    ("ar", _("Arabic")),
-    # Add more languages as needed
-]
+# LANGUAGES = [
+#     ("en", _("English")),
+#     ("fr", _("French")),
+#     ("de", _("German")),
+#     ("pt", _("Portuguese")),
+#     ("ar", _("Arabic")),
+#     # Add more languages as needed
+# ]
+
+# Internationalization
+
+LANGUAGE_CODE = "en-us"
+
+TIME_ZONE = "UTC"
+
+USE_I18N = True
+
+USE_L10N = True
+
+USE_TZ = True
 
 # Set default language
 LANGUAGE_CODE = "en"
