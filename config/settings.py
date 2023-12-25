@@ -104,8 +104,8 @@ if not SECRET_KEY:
 DEBUG = env("DEBUG")
 
 # # Current DJANGO_ENVIRONMENT
-ENVIRONMENT = env("DJANGO_ENVIRONMENT", "local")
-
+#ENVIRONMENT = env("DJANGO_ENVIRONMENT", default="local")
+ENVIRONMENT = os.environ.get("DJANGO_ENVIRONMENT", "local")
 
 # [START cloudrun_django_csrf]
 # SECURITY WARNING: It's recommended that you use this when
