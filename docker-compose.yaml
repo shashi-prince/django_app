@@ -10,6 +10,7 @@ services:
     volumes:
       # - ./mysite:/app
       - ./:/venv/
+      - ./db/:/venv/db/
       #- ./creds.json:/secrets/creds.json
     env_file:
       - ./.env
