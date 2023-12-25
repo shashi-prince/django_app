@@ -11,8 +11,8 @@ steps:
       [
         "-i",
         "${_AR_HOSTNAME}/$PROJECT_ID/${_REPO_NAME}/${_SERVICE_NAME}:$COMMIT_SHA",
-        "-s",
-        "$PROJECT_ID:${_REGION}:${_INSTANCE_NAME}",
+        # "-s",
+        # "$PROJECT_ID:${_REGION}:${_INSTANCE_NAME}",
         "--",
         "python",
         "manage.py",
@@ -24,8 +24,8 @@ steps:
       [
         "-i",
         "${_AR_HOSTNAME}/$PROJECT_ID/${_REPO_NAME}/${_SERVICE_NAME}:$COMMIT_SHA",
-        "-s",
-        "$PROJECT_ID:${_REGION}:${_INSTANCE_NAME}",
+        # "-s",
+        # "$PROJECT_ID:${_REGION}:${_INSTANCE_NAME}",
         "--",
         "python",
         "manage.py",
@@ -38,8 +38,8 @@ steps:
       [
         "-i",
         "${_AR_HOSTNAME}/$PROJECT_ID/${_REPO_NAME}/${_SERVICE_NAME}:$COMMIT_SHA",
-        "-s",
-        "$PROJECT_ID:${_REGION}:${_INSTANCE_NAME}",
+        # "-s",
+        # "$PROJECT_ID:${_REGION}:${_INSTANCE_NAME}",
         "--",
         "python",
         "manage.py",
