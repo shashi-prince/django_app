@@ -103,7 +103,7 @@ if not SECRET_KEY:
 #DEBUG = os.environ.get("DEBUG", True)
 DEBUG = env("DEBUG")
 
-# # Current DJANGO_ENVIRONMENT
+# Current DJANGO_ENVIRONMENT
 #ENVIRONMENT = env("DJANGO_ENVIRONMENT", default="local")
 ENVIRONMENT = os.environ.get("DJANGO_ENVIRONMENT", "local")
 
