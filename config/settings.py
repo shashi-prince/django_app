@@ -119,6 +119,9 @@ if CLOUDRUN_SERVICE_URL:
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 else:
     ALLOWED_HOSTS = ["*"]
+
+#ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
+API_URL = env("CLOUDRUN_SERVICE_URL", default=None)
 # [END cloudrun_django_csrf]
 
 
