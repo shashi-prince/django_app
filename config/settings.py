@@ -150,6 +150,12 @@ INSTALLED_APPS = [
 
 SOCIALACCOUNT_PROVIDERS = { 
     'google': { 
+        "APPS": [
+            {
+                "client_id": "586313358879-g3o46odv0r6n677m0hfrplmiabbn8cms.apps.googleusercontent.com",
+                "secret": "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"
+            },
+        ],
         'SCOPE': [ 
             'profile', 
             'email', 
