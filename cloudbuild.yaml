@@ -86,9 +86,9 @@ substitutions:
   _REGION: us-west4
   _REPO_NAME: cloud-run-source-deploy
   #_AR_HOSTNAME: gcr.io
-  _PROJECT_NUM: '586313358879'
-  _SERVICE_NAME: django-app-sashi
-  _SERVICE_ACCOUNT: svc-django-sashi-test@django-sashi-test.iam.gserviceaccount.com
+  _PROJECT_NUM: 151795946968
+  _SERVICE_NAME: svc-django-app
+  _SERVICE_ACCOUNT: svc-django-app@django-app-1234.iam.gserviceaccount.com
 
 options:
   logging: CLOUD_LOGGING_ONLY
